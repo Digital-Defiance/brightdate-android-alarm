@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- BrightDate palette -->
+    <color name="bd_background">#FF000000</color>
+    <color name="bd_surface">#FF111111</color>
+    <color name="bd_surface_variant">#FF1C1C1C</color>
+    <color name="bd_yellow">#FFFFD700</color>
+    <color name="bd_yellow_alpha">#80FFD700</color>
+    <color name="bd_label_grey">#FF888888</color>
+    <color name="bd_text_primary">#FFFFFFFF</color>
+    <color name="bd_text_secondary">#FFBBBBBB</color>
+    <color name="bd_outline">#FF333333</color>
+    <color name="bd_error">#FFCF6679</color>
+    <color name="bd_card_stroke">#FF222222</color>
+    <color name="bd_divider">#FF222222</color>
+</resources>

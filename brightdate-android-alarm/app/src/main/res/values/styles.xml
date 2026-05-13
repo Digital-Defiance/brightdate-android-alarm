@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.BrightDateAlarm.Base" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Material 3 color attributes, mapped to BrightDate palette -->
+        <item name="colorPrimary">@color/bd_yellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/bd_yellow</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
+        <item name="colorSecondary">@color/bd_yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/bd_yellow</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+        <item name="colorTertiary">@color/bd_yellow</item>
+        <item name="colorOnTertiary">@color/black</item>
+        <item name="colorTertiaryContainer">@color/bd_yellow</item>
+        <item name="colorOnTertiaryContainer">@color/black</item>
+        <item name="colorError">@color/bd_error</item>
+        <item name="colorOnError">@color/white</item> <!-- Assuming white for text on error -->
+
+        <!-- Background and surface colors -->
+        <item name="android:windowBackground">@color/bd_background</item> <!-- Use windowBackground -->
+        <item name="colorOnBackground">@color/bd_text_primary</item>
+        <item name="colorSurface">@color/bd_surface</item>
+        <item name="colorOnSurface">@color/bd_text_primary</item>
+        <item name="colorSurfaceVariant">@color/bd_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/bd_text_secondary</item>
+        <item name="colorOutline">@color/bd_outline</item>
+
+        <!-- Status bar and navigation bar colors -->
+        <item name="android:statusBarColor">@color/bd_surface_variant</item>
+        <item name="android:navigationBarColor">@color/bd_surface_variant</item>
+    </style>
+
+    <style name="Theme.BrightDateAlarm" parent="Theme.BrightDateAlarm.Base" />
+
+    <style name="TextAppearance.BrightDateAlarm.ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+</resources>

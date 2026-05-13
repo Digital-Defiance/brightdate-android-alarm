@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Alarm times are ephemeral; do not back up to cloud -->
+        <exclude domain="database" path="brightdate_alarms.db" />
+    </cloud-backup>
+    <device-transfer>
+        <!-- Allow DB transfer to new device (user may want to keep their alarms) -->
+        <include domain="database" path="brightdate_alarms.db" />
+        <include domain="sharedpref" path="." />
+    </device-transfer>
+</data-extraction-rules>

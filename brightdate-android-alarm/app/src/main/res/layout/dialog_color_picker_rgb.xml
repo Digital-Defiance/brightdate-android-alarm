@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Color preview & hex -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/colorPreview"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/colorPrimary"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/hexValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="#FFD4AF37" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Red -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:text="@string/color_picker_red"
+            android:textColor="#FF5252"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/seekRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255" />
+        <TextView
+            android:id="@+id/valueRed"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            tools:text="255" />
+    </LinearLayout>
+
+    <!-- Green -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:text="@string/color_picker_green"
+            android:textColor="#4CAF50"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/seekGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255" />
+        <TextView
+            android:id="@+id/valueGreen"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            tools:text="204" />
+    </LinearLayout>
+
+    <!-- Blue -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:text="@string/color_picker_blue"
+            android:textColor="#448AFF"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/seekBlue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255" />
+        <TextView
+            android:id="@+id/valueBlue"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            tools:text="0" />
+    </LinearLayout>
+
+</LinearLayout>

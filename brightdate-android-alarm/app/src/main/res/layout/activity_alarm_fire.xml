@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Full-screen alarm fire screen.
+    Shown over the lock screen when a BrightDate alarm triggers.
+
+    Layout: black canvas, large yellow BrightDate centrepiece,
+    ticking live clock, SNOOZE (outlined) + DISMISS (filled yellow) at the bottom.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- "ALARM" micro-label at the top -->
+    <TextView
+        android:id="@+id/labelAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_alarm_firing"
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:letterSpacing="0.2"
+        android:textSize="11sp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Target BrightDate value — huge yellow -->
+    <TextView
+        android:id="@+id/textAlarmBrightDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="52sp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelAlarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="9650.12345" />
+
+    <!-- User label -->
+    <TextView
+        android:id="@+id/textAlarmLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textAlarmBrightDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Morning standup" />
+
+    <!-- Human-readable target date/time -->
+    <TextView
+        android:id="@+id/textAlarmTargetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/textAlarmLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="2026-05-14  08:00" />
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="56dp"
+        android:layout_height="1dp"
+        android:background="?attr/colorOutline"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/textAlarmTargetDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- "NOW" micro-label -->
+    <TextView
+        android:id="@+id/labelNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_now"
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:letterSpacing="0.2"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Live-ticking current BrightDate -->
+    <TextView
+        android:id="@+id/textBrightDateNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="26sp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelNow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="9627.47321" />
+
+    <!-- SNOOZE + DISMISS at the bottom -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- SNOOZE — outlined -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSnooze"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.1"
+            android:textColor="?attr/colorPrimary"
+            app:strokeColor="?attr/colorPrimary"
+            android:text="@string/btn_snooze" />
+
+        <!-- DISMISS — filled yellow -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDismiss"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.1"
+            android:textColor="?attr/colorOnPrimary"
+            app:backgroundTint="?attr/colorPrimary"
+            android:text="@string/btn_dismiss" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

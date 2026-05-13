@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrightDate</string>
+
+    <!-- Overflow menu -->
+    <string name="action_converter">Converter</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Notification -->
+    <string name="channel_name">BrightDate Alarms</string>
+    <string name="channel_description">Notifications for when your BrightDate alarms trigger.</string>
+    <string name="notification_default_title">BrightDate Alarm</string>
+    <!-- %s = formatted BrightDate value, e.g. "9650.12345" -->
+    <string name="notification_body">BrightDate %s</string>
+    <string name="notification_ringing">Alarm ringing…</string>
+    <string name="notification_action_snooze">Snooze</string>
+    <string name="notification_action_stop">Stop</string>
+
+    <!-- Alarm list -->
+    <string name="alarm_deleted">Alarm deleted</string>
+    <string name="alarm_saved">Alarm saved</string>
+    <string name="alarm_no_label">Untitled</string>
+    <string name="empty_alarms">No alarms.\nTap + to add one.</string>
+    <string name="cd_add_alarm">Add alarm</string>
+    <string name="cd_delete_alarm">Delete alarm</string>
+
+    <!-- Add / edit alarm -->
+    <string name="title_add_alarm">New Alarm</string>
+    <string name="title_edit_alarm">Edit Alarm</string>
+    <string name="hint_brightdate">e.g.\u2002 9650.00000</string>
+    <string name="hint_label">Label (optional)</string>
+    <string name="label_brightdate">BRIGHTDATE</string>
+    <string name="label_target_date">TARGET DATE</string>
+    <string name="label_alarm_label">LABEL</string>
+    <string name="label_notify_via">NOTIFY VIA</string>
+    <string name="label_sound">Sound</string>
+    <string name="label_vibrate">Vibrate</string>
+    <string name="label_notification">Notification</string>
+    <string name="label_full_screen">Full screen</string>
+    <string name="label_ringtone">RINGTONE</string>
+    <string name="btn_pick_date">Pick date / time</string>
+    <string name="btn_pick_ringtone">Choose ringtone</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_delete">Delete</string>
+    <string name="ringtone_default">Default alarm sound</string>
+    <string name="ringtone_custom">Custom</string>
+    <string name="calendar_preview_hint">—</string>
+
+    <!-- Alarm fire screen -->
+    <string name="label_alarm_firing">ALARM</string>
+    <string name="label_now">NOW</string>
+    <string name="btn_dismiss">Dismiss</string>
+    <string name="btn_snooze">Snooze</string>
+    <string name="alarm_snoozed">Alarm snoozed for 10 minutes</string>
+    <string name="alarm_stopped">Alarm stopped</string>
+
+    <!-- Converter -->
+    <string name="title_converter">Converter</string>
+    <string name="label_bd_section">BRIGHTDATE  →  DATE</string>
+    <string name="label_date_section">DATE / TIME  →  BRIGHTDATE</string>
+    <string name="label_iso_date">ISO DATE</string>
+    <string name="label_unix_ms">UNIX MS</string>
+    <string name="btn_pick_date_converter">Pick Date &amp; Time</string>
+    <string name="hint_brightdate_converter">BrightDate value</string>
+    <string name="error_invalid_brightdate">Invalid BrightDate</string>
+    <string name="converter_pick_date_title">Select Date</string>
+    <string name="converter_pick_time_title">Select Time</string>
+
+    <!-- Fullscreen intent (swipe/tap actions) -->
+    <string name="action_swipe_stop">Swipe up to stop</string>
+    <string name="action_tap_snooze">Tap to snooze</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!-- Settings -->
+    <string name="title_settings">Settings</string>
+    <string name="pref_header_defaults">Default alarm options</string>
+    <string name="pref_snooze_duration_title">Snooze duration</string>
+    <string name="pref_default_sound_title">Sound by default</string>
+    <string name="pref_default_vibrate_title">Vibrate by default</string>
+    <string name="pref_default_notification_title">Notification by default</string>
+    <string name="pref_key_snooze_duration" translatable="false">snooze_duration</string>
+    <string name="pref_key_default_sound" translatable="false">default_sound</string>
+    <string name="pref_key_default_vibrate" translatable="false">default_vibrate</string>
+    <string name="pref_key_default_notification" translatable="false">default_notification</string>
+
+    <string-array name="snooze_duration_entries">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="snooze_duration_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="pref_category_appearance">Appearance</string>
+    <string name="pref_accent_color_title">Accent color</string>
+    <string name="pref_accent_color_message">Enter an RGB color code (e.g. #FFD4AF37). Restart app to fully apply.</string>
+    <string name="pref_key_accent_color" translatable="false">accent_color</string>
+
+    <!-- Color picker dialog -->
+    <string name="color_picker_title">Pick Accent Color</string>
+    <string name="color_picker_red" translatable="false">R</string>
+    <string name="color_picker_green" translatable="false">G</string>
+    <string name="color_picker_blue" translatable="false">B</string>
+</resources>

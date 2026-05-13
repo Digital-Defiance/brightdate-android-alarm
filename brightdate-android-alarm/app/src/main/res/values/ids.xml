@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tag key used by Theme.kt to remember the accent color last applied
+         to a view tree, so subsequent recolors can swap from the actual
+         current color rather than the static theme color. -->
+    <item name="tag_last_accent" type="id" />
+</resources>

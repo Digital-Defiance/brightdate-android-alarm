@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude the alarm database from cloud backup (alarms are time-sensitive) -->
+    <exclude domain="database" path="brightdate_alarms.db" />
+</full-backup-content>

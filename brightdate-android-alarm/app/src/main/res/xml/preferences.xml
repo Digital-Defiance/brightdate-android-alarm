@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/pref_category_appearance">
+        <Preference
+            app:key="@string/pref_key_accent_color"
+            app:title="@string/pref_accent_color_title"
+            app:summary="#FFFFD700" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_header_defaults">
+
+        <SwitchPreferenceCompat
+            app:key="@string/pref_key_default_sound"
+            app:title="@string/pref_default_sound_title"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/pref_key_default_vibrate"
+            app:title="@string/pref_default_vibrate_title"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/pref_key_default_notification"
+            app:title="@string/pref_default_notification_title"
+            app:defaultValue="true" />
+
+        <ListPreference
+            app:key="@string/pref_key_snooze_duration"
+            app:title="@string/pref_snooze_duration_title"
+            app:entries="@array/snooze_duration_entries"
+            app:entryValues="@array/snooze_duration_values"
+            app:defaultValue="5"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
