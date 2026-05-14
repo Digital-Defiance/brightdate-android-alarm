@@ -20,6 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BrightDateAlarm"
+rootProject.name = "BrightDate Alarm"
 include(":app")
 project(":app").projectDir = file("brightdate-android-alarm/app")

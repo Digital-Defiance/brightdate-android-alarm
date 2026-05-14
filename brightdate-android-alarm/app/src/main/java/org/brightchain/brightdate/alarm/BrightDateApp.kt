@@ -4,7 +4,7 @@ import android.app.Application
 import android.graphics.Color
 import androidx.preference.PreferenceManager
 
-class BrightDateApp : Application() {
+class BrightDateAlarm : Application() {
     override fun onCreate() {
         super.onCreate()
         // No-op for now, but placeholder if needed
