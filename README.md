@@ -2,7 +2,7 @@
 
 ![brightdate-feature-graphic.png](brightdate-feature-graphic.png)
 
-An Android alarm clock app that uses [BrightDate](https://brightdate.brightchain.org)
+An Android alarm clock app that uses [BrightDate](https://brightdate.org)
 — a single scalar count of SI days since the J2000.0 astronomical epoch — as its
 native time format. The app includes a home-screen widget, a full alarm scheduler,
 snooze support, and a BrightDate conversion utility.
